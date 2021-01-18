@@ -1,9 +1,26 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.charsCollection = void 0;
-var charsCollection = /** @class */ (function () {
+var Sorter_1 = require("../Sorter");
+var charsCollection = /** @class */ (function (_super) {
+    __extends(charsCollection, _super);
     function charsCollection(data) {
-        this.data = data;
+        var _this = _super.call(this) || this;
+        _this.data = data;
+        return _this;
     }
     Object.defineProperty(charsCollection.prototype, "length", {
         get: function () {
@@ -23,5 +40,5 @@ var charsCollection = /** @class */ (function () {
         this.data = arrOfChar.join('');
     };
     return charsCollection;
-}());
+}(Sorter_1.Sorter));
 exports.charsCollection = charsCollection;
