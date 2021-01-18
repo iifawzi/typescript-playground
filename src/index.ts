@@ -1,6 +1,7 @@
 import { Sorter } from "./Sorter"
 import { NumbersCollection } from "./collections/numbersCollections"
+import { charsCollection } from "./collections/charsCollection";
 
 
 
-const sorter = new Sorter(new NumbersCollection([209, 5, -987, 120293]));
+const sorter = new Sorter(new charsCollection('azbdc'));
